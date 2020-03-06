@@ -1,0 +1,44 @@
+html {
+    background: url('assets/berries-bowl-bowl-of-fruit-close-up-1145977.jpg') no-repeat center fixed;
+    background-size: cover;
+}
+
+
+
+.page__container {
+    position: absolute;
+    top: 0;
+    left: 16%;
+    right: 16%;
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    background-color: #dfebfb;
+    color: #0d3b06;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    display: block;
+    max-width: 1000px;
+    height: auto;
+}
+
+.header-image {
+    
+    background: url('assets/au-raw_logo.png') no-repeat;
+    width: 1000px;
+    height: 410px;
+    max-width: 100%;
+    max-height: auto;
+    
+}
+
+.main-part__container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    padding: 20px 30px 20px 30px;
+}
