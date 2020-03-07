@@ -1,6 +1,7 @@
 html {
     background: url('assets/berries-bowl-bowl-of-fruit-close-up-1145977.jpg') no-repeat center fixed;
     background-size: cover;
+    font-family: 'Bahnschrift';
 }
 
 
@@ -42,3 +43,82 @@ header {
     max-width: 1000px;
     padding: 20px 30px 20px 30px;
 }
+
+/********** NAVIGATION MENU and SEARCH BAR **********/
+
+/** clearfix **/
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/** end clearfix **/
+
+/** navigation menu **/
+nav {
+    width: 70%;
+    float: left;
+    margin: 0 auto;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0px 20px 0px 20px;
+    list-style: none;
+    border-bottom: 2px solid #d9316f; 
+    
+}
+
+nav li {
+    padding: 16px 0 16px 0;
+    position: relative;
+}
+
+nav a {
+    color: #6bb360;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #0d3b06;
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 300ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+nav a:hover {
+    color: #0d3b06;
+    transition: all ease-in-out 300ms;
+}
+
+/** end navigation menu **/
+
+
+/** search bar **/
+
+.search {
+    width: 30%;
+    float: right;
+    background: black;
+    color: white;
+}
+
+/** end search bar **/
+
+/********** END NAVIGATION MENU and SEARCH BAR **********/
