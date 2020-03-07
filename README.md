@@ -6,3 +6,6 @@
 
 ## 07/03/2020 13:52
 - added a navigation menu to header
+
+## 07/03/2020 15:32
+- added a search bar to header
