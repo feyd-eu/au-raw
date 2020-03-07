@@ -3,3 +3,6 @@
 
 ## 06/03/2020 19:11
 - the initial commit, containing the first draft of a homepage
+
+## 07/03/2020 13:52
+- added a navigation menu to header
