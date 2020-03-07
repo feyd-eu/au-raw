@@ -1,7 +1,7 @@
 html {
     background: url('assets/berries-bowl-bowl-of-fruit-close-up-1145977.jpg') no-repeat center fixed;
     background-size: cover;
-    font-family: 'Bahnschrift';
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -42,6 +42,8 @@ header {
     flex-wrap: wrap;
     max-width: 1000px;
     padding: 20px 30px 20px 30px;
+    background: #5b142e;
+    color: #d3cecb;
 }
 
 /********** NAVIGATION MENU and SEARCH BAR **********/
@@ -58,24 +60,23 @@ header::after {
 
 /** navigation menu **/
 nav {
-    width: 70%;
-    float: left;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 nav ul {
+    width: 70%;
+    margin: 0px auto;
+    float: left;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin: 0;
-    padding: 0px 20px 0px 20px;
     list-style: none;
-    border-bottom: 2px solid #d9316f; 
-    
 }
 
 nav li {
-    padding: 16px 0 16px 0;
+    padding: 25px 0 25px 0;
     position: relative;
 }
 
@@ -93,7 +94,7 @@ nav a::before {
     background-color: #0d3b06;
 
     position: absolute;
-    top: 0;
+    bottom: 0;
     width: 0%;
     transition: all ease-in-out 300ms;
 }
@@ -113,11 +114,42 @@ nav a:hover {
 /** search bar **/
 
 .search {
+    width: 90%;
+    display: flex;
+    }
+
+.searchTerm {
+    width: 100%;
+    border: 2px solid #6bb360;
+    border-right: none;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    }
+
+.searchTerm:focus{
+    color: #380136;
+    }
+
+.searchButton {
+    width: 40px;
+    height: 34px;
+    border: 1px solid #6bb360;
+    background: #6bb360;
+    text-align: center;
+    color: #eeeeee;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+    }
+
+.wrap {
     width: 30%;
     float: right;
-    background: black;
-    color: white;
-}
+    padding: 15px auto 15px auto;
+    margin: 15px auto 15px auto;
+    }
 
 /** end search bar **/
 
