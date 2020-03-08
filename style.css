@@ -27,20 +27,26 @@ header {
 }
 
 .header-image {
-    
-    background: url('assets/au-raw_logo.png') no-repeat;
-    width: 1000px;
-    height: 410px;
-    max-width: 100%;
-    max-height: auto;
-    
+    background: url('assets/au-raw_logo_640.png') no-repeat;
+    max-width: auto;
+    height: 214px;
 }
+
+@media (min-width: 1000px) {
+    .header-image {
+      background: url('assets/au-raw_logo.png') no-repeat;
+      height: 420px;
+      width: auto;
+    }
+  }
+
 
 .main-part__container {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    max-width: 1000px;
+    margin: 0 auto;
+    max-width: 100%;
     padding: 20px 30px 20px 30px;
     background: #5b142e;
     color: #d3cecb;
@@ -129,7 +135,7 @@ nav a:hover {
     }
 
 .searchTerm:focus{
-    color: #380136;
+    color: #0d3b06;
     }
 
 .searchButton {
@@ -154,3 +160,144 @@ nav a:hover {
 /** end search bar **/
 
 /********** END NAVIGATION MENU and SEARCH BAR **********/
+
+/********** FOOTER **********/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    background-color: #dfebfb;
+    color: #0d3b06;
+}
+
+footer ul {
+    width: 70%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+}
+
+footer li {
+    padding: 10px 0px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #0d3b06;
+}
+
+footer a:hover {
+    color: #6bb360;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.0em;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+#dark-green {
+    color: #0d3b06;
+}
+
+#green {
+    color: #6bb360;
+}
+
+#copy {
+    font-size: 1.3em;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact p {
+    margin: 0;
+    padding: 0;
+}
+
+.top-part__container {
+    display: flex;
+    flex-direction: row;
+    max-width: 960px;
+    height: auto;
+    padding: 16px;
+}
+
+#promo {
+    width: 50%;
+    float: left;
+}
+
+#promo img {
+    width: 98%;
+    height: 490px;
+    object-fit: cover;
+}
+
+#promo .name h1 {
+    font-size: 1.5em;
+    text-decoration: uppercase;
+    font-size: bold;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#promo .description {
+    display: flex;
+    flex-direction: row;
+}
+
+#promo-description {
+    width: 80%;
+}
+
+#promo-price {
+    width: 20%;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 3%;
+}
+
+
+#sections {
+    width: 50%;
+    float: right;
+}
+
+.sections__tiles {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-row: auto auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    padding-left: 10px;
+}
+
+#sections img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+#sections p {
+    margin: 0;
+    padding: 0 0 10px 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
