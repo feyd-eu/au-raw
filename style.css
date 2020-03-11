@@ -34,8 +34,8 @@ header {
 
 @media (min-width: 1000px) {
     .header-image {
-      background: url('assets/au-raw_logo.png') no-repeat;
-      height: 420px;
+      background: url('assets/logo-2-inv.png') no-repeat;
+      height: 315px;
       width: auto;
     }
   }
@@ -100,7 +100,7 @@ nav a::before {
     background-color: #0d3b06;
 
     position: absolute;
-    bottom: 0;
+    top: 0;
     width: 0%;
     transition: all ease-in-out 300ms;
 }
@@ -244,7 +244,7 @@ footer a:hover {
 
 #promo img {
     width: 98%;
-    height: 490px;
+    height: 340px;
     object-fit: cover;
 }
 
@@ -284,9 +284,10 @@ footer a:hover {
     grid-template-columns: 50% 50%;
     grid-row: auto auto;
     grid-column-gap: 10px;
-    grid-row-gap: 10px;
+    grid-row-gap: 0px;
     padding-left: 10px;
 }
+
 
 #sections img {
     width: 100%;
@@ -294,10 +295,62 @@ footer a:hover {
     object-fit: cover;
 }
 
-#sections p {
+.section-tag {
+    width: 100%;
+    background: rgba(91,20,46,.5);
+    color: #dfebfb;
     margin: 0;
-    padding: 0 0 10px 0;
+    padding: 10px 0 10px 0;
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
+    position: relative;
+    top: -200px;
 }
+
+.bottom-part__container {
+    padding: 30px 0 90px 0;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 32.3% 32.3% 32.3%;
+    grid-row: auto auto;
+    grid-column-gap: 1.5%;
+    grid-row-gap: 3.5%;
+}
+
+#product img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+#product .description {
+    display: flex;
+    flex-direction: row;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+#product-description {
+    width: 80%;
+}
+
+#product-price {
+    width: 20%;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 3%;
+}
+
+#product .name h1 {
+    font-size: 1.4em;
+    text-decoration: uppercase;
+    font-size: bold;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-top: 5px;
+}
+
+
+
