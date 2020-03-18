@@ -172,8 +172,6 @@ nav a:hover {
 input[type=text], input[type=tel], input[type=email], select, textarea {
         width: 100%; /* Full width */
         padding: 12px; /* Some padding */  
-        
-        
         box-sizing: border-box; /* Make sure that padding and width stays in place */
         margin-top: auto; /* Add a top margin */
         margin-bottom: auto; /* Bottom margin */
@@ -192,9 +190,6 @@ input[type=submit] {
     border: 1px solid #57994d;
     margin-top: 2px;
     text-shadow: none;
-    
-    
-    
     box-sizing: border-box; /* Make sure that padding and width stays in place */
     margin-bottom: auto; /* Bottom margin */
     resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
@@ -342,7 +337,6 @@ footer a:hover {
     padding-right: 3%;
 }
 
-
 #sections {
     width: 50%;
     float: right;
@@ -356,7 +350,6 @@ footer a:hover {
     grid-row-gap: 0px;
     padding-left: 10px;
 }
-
 
 #sections img {
     width: 100%;
@@ -402,6 +395,7 @@ footer a:hover {
 
 #product-description {
     width: 80%;
+    font-size: 0.95em;
 }
 
 #product-price {
@@ -425,7 +419,6 @@ footer a:hover {
     width: 100%;
     height: 453px;
     object-fit: cover;
-
 }
 
 
@@ -451,3 +444,146 @@ footer a:hover {
     float: right;
     object-fit: cover;
 }
+
+/***** PRODUCT *****/
+
+#product a {
+    text-decoration: none;
+    color: #d3cecb;
+}
+
+.product__container {
+    max-width: 960px;
+    height: auto;
+    padding: 10px 14px 0px 10px;
+}
+
+.product__top {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.product-image {
+    width: 50%;
+    float: left;
+}
+
+.product-image img {
+    width: 90%;
+    height: 450px;
+    object-fit: cover;
+}
+
+.product-info {
+    width: 50%;
+    float: right;
+}
+
+.product__bottom {
+    width: 100%;
+}
+
+h4 a {
+    text-decoration: none;
+    color: #ec5489;
+}
+
+.product-ingr {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.product-details {
+    width: 45%;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.product-details #product-price {
+    width: 60%;
+    float: left;
+    font-size: 3em;
+    margin-bottom: 0;
+}
+
+.product-details em {
+    width: 40%;
+    float: right;
+}
+
+#ingr {
+    width: 55%;
+    float: left;
+}
+
+.order {
+    padding-left: 15px;
+    border: 1px solid #c34070;
+    background-color: #8d2d50;
+}
+
+/****** TAGS *********/
+/**background: #5b142e;
+    color: #d3cecb;
+    **/
+.tags {
+    list-style: none;
+    margin: 0;
+    overflow: hidden; 
+    padding: 0;
+  }
+  
+  .tags li {
+    display: inline; 
+  }
+  
+  .tag {
+    background: #8d2d50;
+    border-radius: 3px 0 0 3px;
+    color: #d3cecb;
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 20px 0 23px;
+    position: relative;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+    -webkit-transition: color 0.2s;
+  }
+  
+  .tag::before {
+    background: #5b142e;
+    border-radius: 10px;
+    box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+    content: '';
+    height: 6px;
+    left: 10px;
+    position: absolute;
+    width: 6px;
+    top: 10px;
+  }
+  
+  .tag::after {
+    background: #5b142e;
+    border-bottom: 13px solid transparent;
+    border-left: 10px solid #8d2d50;
+    border-top: 13px solid transparent;
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .tag:hover {
+    background-color: #c34070;
+    color: white;
+  }
+  
+  .tag:hover::after {
+     border-left-color: #c34070; 
+  }
