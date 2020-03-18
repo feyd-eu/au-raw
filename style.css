@@ -153,7 +153,7 @@ nav a:hover {
     border: 1px solid #6bb360;
     background: #6bb360;
     text-align: center;
-    color: #eeeeee;
+    color: #DFEBFB;
     border-radius: 0 5px 5px 0;
     cursor: pointer;
     font-size: 20px;
@@ -181,16 +181,33 @@ input[type=text], input[type=tel], input[type=email], select, textarea {
 }
 
 input[type=submit] {
-    width: 30%; /* Full width */
+    background-color: #3e6d37;
+    color: #DFEBFB;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 40%; /* Full width */
     float: right;
     padding: 10px; /* Some padding */  
     border-radius: 5px;
+    border: 1px solid #57994d;
     margin-top: 2px;
+    text-shadow: none;
+    
+    
     
     box-sizing: border-box; /* Make sure that padding and width stays in place */
     margin-bottom: auto; /* Bottom margin */
     resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
 }
+
+input[type=submit]:hover {
+    background: #57994d;
+}
+
+input[type=submit]:active {
+    
+    transform: translateY(2px);
+  }
 
 #asterisk {
     font-size: small;
@@ -420,6 +437,10 @@ footer a:hover {
 .form__container {
     width: 55%;
     float: left;
+}
+
+.form__picture{
+    margin: auto 0;
 }
 
 .form__picture img {
