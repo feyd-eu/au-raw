@@ -5,4 +5,10 @@
 - the initial commit, containing the first draft of a homepage
 
 ## 07/03/2020 13:52
-- added a navigation menu to header
+- added the navigation menu to header
+
+## 07/03/2020 15:32
+- added the search bar to header
+
+## 08/03/2020 22:48
+- added the header and the promo part of the homepage
