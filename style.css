@@ -31,7 +31,7 @@ header {
     background: url('assets/au-raw_logo_640.png') no-repeat;
     max-width: auto;
     max-height: 31vh;
-    object-fit: cover;
+    object-fit: fill;
 }
 
 @media (min-width: 1000px) {
@@ -39,7 +39,7 @@ header {
       background: url('assets/logo-6-inv.png') no-repeat;
       height: 31vh;
       width: auto;
-      object-fit: cover;
+      object-fit: fill;
     }
   }
 
